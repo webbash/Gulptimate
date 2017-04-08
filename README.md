@@ -29,5 +29,24 @@ Gulp for all projects
 19. <a href="">Gulp-imagemin</a> - Сжатие изображений.
 
 
-Использование 
+Файловая структура
 ---
+
+```
+dev/ - Папка с файлами разработки
+
+dev/sass/_vars - Переменные для Sass
+dev/sass/_base - Стили которые не относятся к отдельным страницам (например header, footer)
+dev/sass/bootstrap - Компиляция bootstrap 4
+dev/sass/fonts - Подключение шрифтов
+
+dev/html - Корневая папка со всеми страницами проекта
+dev/html/components - Отдельные компоненты проекта (header,footer,nav)
+
+dev/fonts - Шрифты проекта
+dev/img - Изображения проекта
+dev/js - Файлы js скриптов
+dev/libs - Папка с библиотеками проекта
+
+app/ - Папка продакшн (готовая верстка)
+```
