@@ -1,0 +1,74 @@
+@import "vars"
+
+*
+	margin: 0
+	padding: 0
+	outline: none
+	box-sizing: border-box
+	// Фикс для минускульных цифр в шрифтах
+	font-variant-numeric: lining-nums
+	-moz-font-feature-settings: "lnum"
+	-webkit-font-feature-settings: "lnum"
+	font-feature-settings: "lnum"
+
+div, header
+	display: block
+	overflow: hidden
+
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+		
+
+h1 , h2 , h3 , h4
+	margin: 0
+
+button
+	border: none
+
+*::-webkit-input-placeholder
+	color: #000
+
+*:-moz-placeholder
+	color: #000
+
+*::-moz-placeholder
+	color: #000
+
+*:-ms-input-placeholder
+	color: #000
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none
+	margin: 0 /* <-- Apparently some margin are still there even though it's hidden */
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+
+ul
+	list-style: none
+	margin: 0
+
+@mixin placeholder($color)
+
+	*::-webkit-input-placeholder
+		color: $color
+
+	*:-moz-placeholder
+		color: $color
+
+	*::-moz-placeholder
+		color: $color
+
+	*:-ms-input-placeholder
+		color: $color
+
+
+section
+	overflow: hidden
